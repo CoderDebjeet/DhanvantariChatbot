@@ -78,5 +78,5 @@ It integrates **LLM (GPT)**, **Retrieval-Augmented Generation (RAG)**, and a **m
 
 Named after the Hindu deity of Ayurveda, **Dhanvantari** aims to **bridge ancient wisdom with modern AI**, making holistic health **accessible, personalized, and tech-driven**.
 
-## Our Group Application Demo :
+## Our Group Application Demo [Contributed only the Home Page and help them integrate other pages] :
 https://github.com/CoderDebjeet/healthcareflutter/assets/91367172/8b96aec5-3619-4834-849e-3f5d47a4abe4
