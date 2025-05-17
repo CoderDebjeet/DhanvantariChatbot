@@ -56,8 +56,9 @@ It integrates **LLM (GPT)**, **Retrieval-Augmented Generation (RAG)**, and a **m
 
 <!-- Add your actual image paths here after uploading to repo -->
 
-![Home Screen](images/home_screen.png)
-![Chatbot Response](images/chat_response.png)
+![Home Screen](![365042320-d44a692d-5aa2-4e6c-b0f7-3f672f9fbfd9](https://github.com/user-attachments/assets/5de03165-85fe-46dc-b115-dc1a7006f924)
+)
+![Chatbot Response](![jsehhseiisefsf](https://github.com/user-attachments/assets/7723518c-8b28-4d18-a5cf-8c90e57ddf87))
 
 ---
 
