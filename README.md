@@ -1,63 +1,76 @@
-# Ayurvedic-Chatbot-named Dhanvantari
-Dhanvantari is an intelligent Ayurvedic assistant designed to provide personalized treatment suggestions based on user symptoms, recommend doctors and medicines, offer knowledge on herbs, and guide users in maintaining a healthy work-life balance through yoga and lifestyle tips. It integrates LLM (GPT), Retrieval-Augmented Generation (RAG), and a modern Flutter-based cross-platform UI.
+# 🧘‍♂️ Dhanvantari - Your Ayurvedic Companion
 
-🛠️ Tech Stack
-Frontend: Flutter (Cross-platform)
+**Dhanvantari** is an intelligent Ayurvedic assistant designed to provide **personalized treatment suggestions** based on user symptoms. It recommends **doctors and medicines**, shares knowledge about **herbs**, and guides users toward a **balanced lifestyle** through **yoga and wellness tips**.  
+It integrates **LLM (GPT)**, **Retrieval-Augmented Generation (RAG)**, and a **modern Flutter-based cross-platform UI** for a seamless and holistic experience.
 
-Backend & AI:
+---
 
-Python (FastAPI / Flask)
+## 🚀 Tech Stack
 
-HuggingFace Transformers (LLM)
+| Layer         | Tools & Frameworks                                                                 |
+|---------------|------------------------------------------------------------------------------------|
+| **Frontend**  | Flutter (Cross-platform: Android, iOS, Web)                                        |
+| **Backend**   | Python (FastAPI / Flask)                                                           |
+| **AI / NLP**  | Hugging Face Transformers (LLM), RAGChain, Sentence Transformers (`all-MiniLM`)    |
+| **Vector DB** | Pinecone (Semantic search with vector embeddings)                                  |
+| **Database**  | Firebase Firestore (Users, Appointments, Preferences)                              |
+| **Auth**      | Firebase Authentication                                                            |
+| **Hosting**   | Firebase Hosting / Vercel *(optional for backend deployment)*                      |
 
-Pinecone (Vector DB for semantic search)
+---
 
-RAGChain (for Retrieval-Augmented Generation)
+## 🔄 Functional Workflow
 
-Database: Firebase Firestore (for users, appointments, and preferences)
+1. ### 📝 Symptom Input
+   - Users input their symptoms (e.g., "I have cough and sore throat").
+   - Input is validated in the Flutter UI and sent to the backend.
 
-Authentication: Firebase Auth
+2. ### 🔍 Query Preprocessing
+   - Input is cleaned and tokenized.
+   - Embeddings are generated using **Sentence Transformers** like `all-MiniLM`.
 
-Hosting: Firebase Hosting / Vercel (Optional for backend)
+3. ### 🧠 Semantic Search (Pinecone)
+   - The embeddings are used to search in the **Pinecone Vector DB**.
+   - Relevant Ayurvedic treatments, causes, and herbs are retrieved.
 
-🔄 Detailed Functional Workflow
-1. Symptom Input
-User enters symptoms like: “I have cough and sore throat”.
+4. ### 🤖 RAG (Retrieval-Augmented Generation)
+   - **RAGChain** merges the user's query with the retrieved context.
+   - The combined prompt is sent to an LLM (e.g., GPT-3.5, Falcon, Mistral) on **Hugging Face**.
+   - The model responds with context-aware Ayurvedic guidance.
 
-UI validates input and forwards it to the backend.
+5. ### 📤 Response Handling
+   - Post-processing is done on the output.
+   - The final result is displayed beautifully on the Flutter frontend.
 
-2. Query Preprocessing
-The input is cleaned and tokenized.
+---
 
-Converted to embeddings using Sentence Transformers (e.g., all-MiniLM).
+## 💬 Example User Interaction
 
-3. Semantic Search via Pinecone
-Embeddings are used to perform a semantic search in Pinecone Vector DB.
+> **User**: “I’m feeling fatigue and joint pain.”  
+> **Dhanvantari**:  
+> *"Based on your symptoms, you may be experiencing early signs of **Ama** buildup (toxic residue). I recommend a light diet (**Langhana**), with herbs such as **Guggulu** and **Ashwagandha**. Would you like to see nearby Ayurvedic doctors?"*
 
-Relevant Ayurvedic texts, herbs, treatments, and causes are retrieved.
+---
 
-4. RAG (Retrieval-Augmented Generation)
-RAGChain combines the user's query and the retrieved context.
+## 📸 Screenshots
 
-Prompt is sent to an LLM (e.g., GPT-3.5, Falcon, or Mistral) hosted on Hugging Face.
+<!-- Add your actual image paths here after uploading to repo -->
 
-Model generates a response using both context and general Ayurvedic knowledge.
+![Home Screen](images/home_screen.png)
+![Chatbot Response](images/chat_response.png)
 
-5. Response Handling
-The generated text is post-processed.
+---
 
-Sent back to the Flutter frontend for user display.
+## 📌 Future Improvements
 
-🧪 Example User Interaction
-User: “I’m feeling fatigue and joint pain.”
-Dhanvantari:
-"Based on your symptoms, you may be experiencing early signs of Ama buildup (toxic residue). I recommend a light diet (Langhana), with herbs such as Guggulu and Ashwagandha. Would you like to see nearby Ayurvedic doctors?"
+- 🔧 Fine-tune a domain-specific LLM on Ayurvedic literature.
+- 🌐 Multilingual Support (Hindi, Sanskrit, Tamil).
+- 📊 Google Fit / Apple Health integration for lifestyle tracking.
+- 🧠 Personalized chat using user medical history.
+- 📱 Add Doctor Appointment Booking & Notifications.
 
-📌 Future Improvements
-Fine-tune an LLM on Ayurvedic texts for domain-specific performance.
+---
 
-Multilingual support (Hindi, Sanskrit, Tamil).
+## 🙏 Why Dhanvantari?
 
-Integrate Google Fit or Apple Health for lifestyle tracking.
-
-Chatbot personalization using user history.
+Named after the Hindu deity of Ayurveda, **Dhanvantari** aims to **bridge ancient wisdom with modern AI**, making holistic health **accessible, personalized, and tech-driven**.
