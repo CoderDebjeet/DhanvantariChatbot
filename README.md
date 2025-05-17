@@ -55,6 +55,10 @@ It integrates **LLM (GPT)**, **Retrieval-Augmented Generation (RAG)**, and a **m
 ## 📸 Screenshots
 
 <!-- Add your actual image paths here after uploading to repo -->
+![365042320-d44a692d-5aa2-4e6c-b0f7-3f672f9fbfd9](https://github.com/user-attachments/assets/29b22198-6350-44cf-b5a8-b34a2c0e21c9)
+
+
+![jsehhseiisefsf](https://github.com/user-attachments/assets/da4ccf88-a8cf-4ecc-afcc-cc14e27c87cc)
 
 ![Home Screen](![365042320-d44a692d-5aa2-4e6c-b0f7-3f672f9fbfd9](https://github.com/user-attachments/assets/5de03165-85fe-46dc-b115-dc1a7006f924)
 )
